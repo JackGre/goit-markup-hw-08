@@ -1,0 +1,43 @@
+.footer-link {
+  &__studio {
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $white-text-color;
+  }
+  &__web {
+    color: $accent-text-color;
+  }
+
+  &__address {
+    font-style: normal;
+    line-height: 1.17;
+    color: $white-text-color;
+    margin-bottom: 9px;
+  }
+
+  &__mail,
+  &__tel {
+    line-height: 1.17;
+    color: $footer-text-color;
+    /*transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $animation;*/
+    @include transit(color);
+  }
+  &__mail {
+    margin-bottom: 9px;
+  }
+
+  &__mail:hover,
+  &__mail:focus {
+    color: $accent-text-color;
+  }
+  &__tel:hover,
+  &__tel:focus {
+    color: $accent-text-color;
+  }
+}

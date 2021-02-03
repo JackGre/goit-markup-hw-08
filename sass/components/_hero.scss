@@ -1,0 +1,49 @@
+.hero {
+  padding: 0;
+  background-color: $hero-bg-color;
+
+  .overlay {
+    background-image: linear-gradient(
+        to right,
+        $gradient-color,
+        $gradient-color
+      ),
+      url("../images/hero.jpg");
+  }
+  &-block {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-theme {
+    text-align: center;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: $white-text-color;
+  }
+
+  &-button {
+    border-radius: 4px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
+    background-color: $accent-text-color;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $white-text-color;
+  }
+}

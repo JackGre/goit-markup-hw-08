@@ -1,0 +1,40 @@
+.section-advantages {
+  padding-top: 94px;
+
+  display: flex;
+
+  &__list > &__link:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    width: 270px;
+  }
+
+  &__bg {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $bg-command-color;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.14;
+    color: $main-text-color;
+  }
+
+  &__description {
+    line-height: 1.71;
+    color: $secondary-text-color;
+  }
+}

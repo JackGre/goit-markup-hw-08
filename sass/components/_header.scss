@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  min-height: 80px;
+  background-color: $white-text-color;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid $border-bottom-heder;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}

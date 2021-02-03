@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  align-items: center;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &-item {
+    color: $secondary-text-color;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $secondary-text-color;
+    fill: $fill-icon;
+    /*transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $animation;*/
+    @include transit(color);
+  }
+  &-link:focus,
+  &-link:hover {
+    color: $accent-text-color;
+  }
+
+  &-link > .color-icon {
+    color: $social-command-color;
+  }
+  &-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  &-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}

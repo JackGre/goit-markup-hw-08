@@ -1,0 +1,86 @@
+body {
+  font-family: $main-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  padding-top: 80px;
+
+  background-color: $white-text-color;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+}
+
+.section-work,
+.section-command,
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-work__text,
+.section-command__text,
+.section-client__text {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  color: $main-text-color;
+}
+
+.visually-heeden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.agreement-input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}

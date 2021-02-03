@@ -1,0 +1,80 @@
+.form-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  & input {
+    outline: none;
+    height: 40px;
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  &__lable {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    color: $secondary-text-color;
+  }
+
+  & &__input:focus {
+    border: 1px solid $accent-text-color;
+  }
+
+  .form-name {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 15px;
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    @extend %translate-Y;
+    transition: color $animation;
+    margin: 0;
+  }
+
+  &__input {
+    position: relative;
+    fill: $fill-icon;
+    color: $main-text-color;
+  }
+
+  .form-input {
+    padding-left: 40px;
+    transition: border $animation;
+  }
+
+  .form-tel {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 15px;
+    /*top: 50%;    
+    transform: translateY(-50%);*/
+    @extend %translate-Y;
+    transition: color $animation;
+  }
+
+  .form-mail {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    left: 15px;
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    @extend %translate-Y;
+
+    //transition: color $animation;
+    @include transit(color);
+  }
+
+  .form-input:focus ~ .form-name,
+  .form-input:focus ~ .form-tel,
+  .form-input:focus ~ .form-mail {
+    color: $accent-text-color;
+  }
+}

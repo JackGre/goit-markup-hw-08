@@ -1,0 +1,32 @@
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color-social-footer;
+    border-radius: 50%;
+    color: $white-text-color;
+    fill: $fill-icon;
+    //transition: background-color $animation;
+    @include transit(background-color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-text-color;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+}
