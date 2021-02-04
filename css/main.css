@@ -307,10 +307,46 @@
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header__menu {
+    display: none;
+  }
+}
+
 .header__menu-icon {
   fill: currentColor;
   width: 40px;
   height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+  }
 }
 
 .nav .nav-studio {
@@ -323,12 +359,44 @@
   padding-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav .nav-studio {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .nav .nav-studio {
+    margin-right: 93px;
+  }
+}
+
 .nav .nav-web {
   color: #2196f3;
 }
 
 .nav .nav-site {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav .nav-site {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .nav .nav-site {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav .nav-site > .nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav .nav-link {
@@ -369,6 +437,25 @@
 
 .contact {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact-item {
@@ -417,6 +504,14 @@
   margin-right: 10px;
 }
 
+/*.header__menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
+}*/
 .hero {
   padding: 0;
   background-color: #c4c4c4;
@@ -1167,8 +1262,22 @@ body {
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
 .container {
   width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
