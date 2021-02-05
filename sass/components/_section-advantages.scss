@@ -1,14 +1,27 @@
 .section-advantages {
   padding-top: 94px;
 
-  display: flex;
-
   &__list > &__link:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
-
+  @media screen and (min-width: 768px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
   &__link {
-    width: 270px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1600px) {
+      flex-basis: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
   }
 
   &__bg {

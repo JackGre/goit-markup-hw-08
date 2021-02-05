@@ -27,9 +27,6 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
-    @media screen and (min-width: 1600px) {
-      display: none;
-    }
   }
   &__menu-icon {
     fill: currentColor;
@@ -126,12 +123,13 @@
   //margin-right: 50px;
   //}
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: block;
   }
   @media screen and (min-width: 1600px) {
     display: flex;
     &-item:not(:last-child) {
       margin-right: 30px;
+      align-items: center;
     }
   }
   &-item {
@@ -140,10 +138,10 @@
 
   &-link {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
     color: $secondary-text-color;
     fill: $fill-icon;
     /*transition-property: color;
@@ -151,6 +149,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition: color $animation;*/
     @include transit(color);
+  }
+
+  .mail {
+    margin-bottom: 10px;
   }
   &-link:focus,
   &-link:hover {

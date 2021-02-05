@@ -1,42 +1,49 @@
 .section-work {
-  &__list {
-    display: flex;
-  }
-  &__img {
-    display: block;
-    width: 100%;
-  }
+  display: none;
 
-  &__list > &__lable:not(:last-child) {
-    margin-right: 30px;
-  }
+  @media screen and (min-width: 1600px) {
+    & {
+      display: flex;
+    }
+    &__list {
+      display: flex;
+    }
+    &__img {
+      display: block;
+      width: 100%;
+    }
 
-  &__lable {
-    position: relative;
-    width: 370px;
-  }
+    &__list > &__lable:not(:last-child) {
+      margin-right: 30px;
+    }
 
-  &__name {
-    position: absolute;
-    /*top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
-    @extend %window-centered;
+    &__lable {
+      position: relative;
+      width: 370px;
+    }
 
-    color: $white-text-color;
+    &__name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //@extend %window-centered;
 
-    line-height: 1.14;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-  &__fon {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    bottom: 0;
-    left: 0;
+      color: $white-text-color;
 
-    background-color: $bg-lable-color;
+      line-height: 1.14;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    &__fon {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 70px;
+      bottom: 0;
+      left: 0;
+
+      background-color: $bg-lable-color;
+    }
   }
 }
