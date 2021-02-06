@@ -360,6 +360,7 @@
   color: #000000;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -512,11 +513,14 @@
 .hero {
   padding: 0;
   background-color: #c4c4c4;
-}
-
-.hero .overlay {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  /*.overlay {
+    background-image: linear-gradient(
+        to right,
+        $gradient-color,
+        $gradient-color
+      ),
+      url("../images/hero.jpg");
+  }*/
 }
 
 .hero-block {
@@ -1202,19 +1206,48 @@
 }
 
 .section-command__block {
-  width: 100%;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   outline: 1px solid red;
 }
 
-.section-command__title > .section-command__block:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .section-command__title > .section-command__block:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-command__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-command__block {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section-command__block {
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
 }
 
 .section-command__img {
   display: block;
+  width: 100%;
 }
 
 .section-command__employee {
@@ -1361,10 +1394,27 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1600px;
+  max-width: 450px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .overlay {
+    max-width: 1600px;
+  }
 }
 
 .section-work,

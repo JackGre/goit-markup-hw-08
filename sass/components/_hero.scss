@@ -2,14 +2,14 @@
   padding: 0;
   background-color: $hero-bg-color;
 
-  .overlay {
+  /*.overlay {
     background-image: linear-gradient(
         to right,
         $gradient-color,
         $gradient-color
       ),
       url("../images/hero.jpg");
-  }
+  }*/
   &-block {
     width: 696px;
     margin-left: auto;
