@@ -50,7 +50,7 @@
     align-items: center;
     margin-right: auto;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -68,7 +68,7 @@
     @media screen and (min-width: 768px) {
       margin-right: 80px;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 93px;
     }
   }
@@ -81,7 +81,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
     }
   }
@@ -132,7 +132,7 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     &-item:not(:last-child) {
       margin-right: 30px;
