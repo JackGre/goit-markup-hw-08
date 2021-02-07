@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
-  padding-top: 60px;
+  /*padding-top: 60px;
 
   background-color: $white-text-color;
 
@@ -12,11 +12,13 @@ body {
   }
   @media screen and (min-width: 1200px) {
     padding-top: 80px;
-  }
+  }*/
 }
-
+.section {
+  width: 100%;
+}
 .container {
-  width: 450px;
+  //width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -27,6 +29,36 @@ body {
   }
   @media screen and (min-width: 1200px) {
     width: 1170px;
+  }
+}
+.container__header {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+.container__footer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 1200px;
   }
 }
 
@@ -69,16 +101,20 @@ p {
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
-  @media screen and (min-width: 1600px) {
-    max-width: 1600px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
 .section-work,
 .section-command,
 .section-client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-work__text,

@@ -215,7 +215,7 @@
     <!--Footer-->
 
     <footer class="footer">
-        <div class="container">
+        <div class="container__footer">
             <div class="footer-list list">            
                 <div class="footer-link">                                    
                     <a href="./index.html" class="footer-link__studio"><span class="footer-link__web">Web</span>Studio</a>               
@@ -263,23 +263,22 @@
 
                     </div>                
                 </div>
-                <div>
-                    <form class="form">
-                        <!--<div class="form-mail">-->
-                            <div>
-                                <h2 class="form-text__mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-                                <input type="email" id="mail" placeholder="E-mail" class="form-footer__input">   
-                            </div>
-                            <div class="form-button">
-                                <button type="submit" class="form-button__mail">Подписаться</button>                                     
-                                <svg class="form-icon__send">
-                                    <use href='./images/symbol-defs.svg#icon-send'></use>
-                                </svg>                                 
-                            </div>                                              
+                <div class="footer-form">
+                    <p class="form-text__mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+
+                    <form class="form">                       
+                        <input type="email" id="mail" placeholder="E-mail" class="form-footer__input">
+                        <button type="submit" class="form-button__mail">    
+                            <span class="form-text">Подписаться</span>
+                            <svg  width="24" height="24">
+                                <use href='./images/symbol-defs.svg#icon-send'></use>
+                            </svg>        
+                        </button>    
+                                             
                         <!--</div>-->                        
                     </form>
                 </div>            
             </div>
         </div>    
-    </footer>    
+    </footer> 
 </body>
