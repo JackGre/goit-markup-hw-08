@@ -28,6 +28,7 @@
     fill: currentColor;
     padding: 0;
     margin-left: auto;
+    @include transit(color);
 
     @media screen and (min-width: 768px) {
       display: none;
@@ -83,6 +84,7 @@
     letter-spacing: 0.02em;
 
     color: $main-text-color;
+    @include transit(color);
   }
   &__site .menu-link:hover,
   &__site .menu-link:focus {
