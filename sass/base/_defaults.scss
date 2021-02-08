@@ -34,6 +34,7 @@ body {
 .container__header {
   margin-left: auto;
   margin-right: auto;
+
   @media screen and (min-width: 768px) {
     width: 738px;
   }
@@ -58,7 +59,9 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    width: 1200px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -89,8 +92,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 450px;
-  height: 600px;
+  max-width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -98,11 +101,10 @@ p {
   background-size: cover;
   background-image: linear-gradient(to right, $gradient-color, $gradient-color),
     url("../images/hero.jpg");
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
+
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    height: 600px;
+    max-width: 1600px;
   }
 }
 
