@@ -19,6 +19,7 @@
   }
 
   &__menu {
+    z-index: 10;
     display: block;
     background-color: transparent;
     border: none;
@@ -32,6 +33,10 @@
       display: none;
     }
   }
+  &__menu:hover,
+  &__menu:focus {
+    color: $accent-text-color;
+  }
 
   &__menu .icon-close {
     display: none;
@@ -43,7 +48,94 @@
   &__menu.is-open .icon-menu {
     display: none;
   }
+  .menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: $white-text-color;
+    box-shadow: $menu-shadow;
+
+    z-index: 3;
+
+    &.is-open {
+      display: block;
+    }
+  }
 }
+
+.menu-container {
+  &__site {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 302px;
+  }
+  &__site > &__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .menu-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: $main-text-color;
+  }
+  &__site .menu-link:hover,
+  &__site .menu-link:focus {
+    color: $accent-text-color;
+  }
+
+  &__contact {
+    margin-bottom: 64px;
+  }
+  .menu-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+
+    letter-spacing: 0.02em;
+
+    color: $accent-text-color;
+    margin-bottom: 32px;
+  }
+  .menu-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+  &__social {
+    display: flex;
+    align-items: baseline;
+    &-text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+
+      letter-spacing: 0.02em;
+
+      color: $accent-text-color;
+    }
+  }
+  &__social-line {
+    border-left: 1px solid $verticl-line-color;
+    height: 22px;
+  }
+
+  &__social-link:not(:last-child) {
+    margin-right: 10px;
+  }
+  /*&__social-text:not(:last-child) {
+    margin-right: 10px;
+  }*/
+}
+
 .nav {
   @media screen and (min-width: 768px) {
     display: flex;

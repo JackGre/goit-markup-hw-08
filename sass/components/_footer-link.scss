@@ -1,4 +1,13 @@
 .footer-link {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+
   &__studio {
     margin-bottom: 20px;
     font-family: Raleway;
@@ -15,7 +24,10 @@
     font-style: normal;
     line-height: 1.17;
     color: $white-text-color;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__mail,
@@ -29,7 +41,10 @@
     @include transit(color);
   }
   &__mail {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__mail:hover,

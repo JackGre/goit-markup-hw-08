@@ -3,20 +3,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 12px;
-  margin-right: 11px;
+
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-right: 11px;
+  }
 
   &-label {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: $secondary-text-color;
     margin-left: 24px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &-link {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
 
     color: $accent-text-color;
     text-decoration-skip-ink: none;
