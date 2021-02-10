@@ -14,6 +14,9 @@
     fill: $fill-icon;
     //transition: background-color $animation;
     @include transit(background-color);
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
   }
 
   &__link:hover,
