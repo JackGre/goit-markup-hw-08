@@ -17,6 +17,11 @@
       margin-bottom: 30px;
     }
   }*/
+
+  &-types:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     &-types {
       display: flex;
@@ -53,6 +58,8 @@
   &-block__work {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   &-img {
@@ -67,8 +74,8 @@
     letter-spacing: 0.06em;
     color: $main-text-color;
 
-    padding-right: 24px;
-    padding-left: 24px;
+    //padding-right: 24px;
+    //padding-left: 24px;
     margin-bottom: 4px;
   }
 
@@ -76,9 +83,6 @@
     font-size: 16px;
     line-height: 1.875;
     color: $secondary-text-color;
-
-    padding-right: 24px;
-    padding-left: 24px;
   }
 
   &-produkt {
