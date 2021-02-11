@@ -6,9 +6,6 @@
     box-shadow: $box-shadow-bloc-command;
   }
 
-  /*&__title {
-    width: 450px;
-  }*/
   &__title > &__block:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;

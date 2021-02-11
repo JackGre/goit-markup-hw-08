@@ -12,8 +12,8 @@
     border-radius: 50%;
     color: $white-text-color;
     fill: $fill-icon;
-    //transition: background-color $animation;
-    @include transit(background-color);
+    transition: background-color $animation;
+    //@include transit(background-color);
     @media screen and (min-width: 1200px) {
       margin: 0;
     }

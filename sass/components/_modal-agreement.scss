@@ -48,14 +48,14 @@
     border: 2px solid $main-text-color;
     border-radius: 2px;
 
-    /*transition: background-color $animation, border $animation,
+    transition: background-color $animation, border $animation,
       background-image $animation, background-size $animation,
-      background-origin $animation;*/
-    @include transit(background-color);
+      background-origin $animation;
+    /*@include transit(background-color);
     @include transit(border);
     @include transit(background-image);
     @include transit(background-size);
-    @include transit(background-origin);
+    @include transit(background-origin);*/
   }
 
   &-input:checked + &-label::after {

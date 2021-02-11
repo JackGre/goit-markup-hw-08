@@ -68,8 +68,8 @@
     transform: translateY(-50%);*/
     @extend %translate-Y;
 
-    //transition: color $animation;
-    @include transit(color);
+    transition: color $animation;
+    //@include transit(color);
   }
 
   .form-input:focus ~ .form-name,
