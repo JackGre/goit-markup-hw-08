@@ -1161,8 +1161,7 @@
 
 .activity-text-action {
   position: absolute;
-  width: 322px;
-  height: 168px;
+  width: 100%;
   padding-left: 24px;
   padding-right: 24px;
   font-size: 18px;
@@ -1174,6 +1173,8 @@
   .activity-text-action {
     padding-left: 0;
     padding-right: 0;
+    width: 322px;
+    height: 168px;
   }
 }
 
