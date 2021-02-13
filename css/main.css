@@ -1617,10 +1617,6 @@ body {
   }*/
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 .section {
   width: 100%;
 }
