@@ -383,6 +383,10 @@
   display: block;
 }
 
+.header__menu.is-open {
+  position: fixed;
+}
+
 .header__menu.is-open .icon-menu {
   display: none;
 }

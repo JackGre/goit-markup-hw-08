@@ -37,9 +37,13 @@
   &__menu.is-open .icon-close {
     display: block;
   }
+  &__menu.is-open {
+    position: fixed;
+  }
   &__menu.is-open .icon-menu {
     display: none;
   }
+
   .menu-container {
     display: none;
     position: fixed;
