@@ -60,17 +60,14 @@
     z-index: 3;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }
 
 .menu-container {
-  &__site {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 302px;
-  }
   &__site > &__nav-item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -112,6 +109,8 @@
   &__social {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+
     &-text {
       font-weight: 500;
       font-size: 18px;
