@@ -430,7 +430,7 @@
 .menu-container__nav {
   margin-right: auto;
   margin-left: auto;
-  width: 480px;
+  width: 100%;
 }
 
 .menu-container__site > .menu-container__nav-item:not(:last-child) {
@@ -439,7 +439,7 @@
 
 .menu-container .menu-link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: calc(30px + 10 * (100vw / 450));
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
@@ -456,12 +456,13 @@
   margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  width: 100%;
 }
 
 .menu-container .menu-tel {
   font-weight: 500;
   font-size: 34px;
+  font-size: calc(27px + 7 * (100vw / 450));
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -489,8 +490,8 @@
 
 .menu-container__social-text {
   font-weight: 500;
-  font-size: 18px;
   line-height: 1.22;
+  font-size: calc(10px + 8 * (100vw / 450));
   letter-spacing: 0.02em;
   color: #2196f3;
 }
