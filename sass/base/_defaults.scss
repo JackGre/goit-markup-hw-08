@@ -103,6 +103,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: linear-gradient(to right, $gradient-color, $gradient-color);
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(
         to right,
@@ -111,17 +112,14 @@ p {
       ),
       url("../images/hero/Hero.jpg");
     @media screen and (min-resolution: 2dppx) {
-      background-image: url("../images/hero/Hero@2x.jpg");
+      background-image: linear-gradient(
+          to right,
+          $gradient-color,
+          $gradient-color
+        ),
+        url("../images/hero/Hero@2x.jpg");
     }
   }
-  /*background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(to right, $gradient-color, $gradient-color),
-    url("../images/hero/Hero.jpg");
-  @media screen and (min-resolution: 2dppx) {
-    background-image: url("../images/hero/Hero@2x.jpg");
-  }*/
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
