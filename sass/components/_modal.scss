@@ -17,7 +17,8 @@
     width: 450px;
     height: 609px;
   }*/
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 449px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -55,10 +56,14 @@
   &-form__text {
     margin-bottom: 12px;
     font-weight: bold;
-    font-size: 20px;
+    //font-size: 20px;
+    font-size: calc(12px + (8 + 8 * 0.7) * ((100vw - 320px) / 450));
     line-height: 1.5;
     color: $main-text-color;
     text-align: center;
+    @media screen and (min-width: 449px) {
+      font-size: 20px;
+    }
 
     @media screen and (min-width: 1200px) {
       font-size: 20px;
